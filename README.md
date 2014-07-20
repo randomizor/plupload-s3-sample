@@ -1,4 +1,4 @@
-#SETUP
+##SETUP
 
 Set your bucket, access key and secret key in config/settings.yml
 

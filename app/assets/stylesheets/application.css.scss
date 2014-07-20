@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *= require_self
+ *= require_tree .
+ */
+ 
+.image-box-holder{
+	width: 24.25%;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	margin-right: 1%;
+	margin-left: -2px;
+
+	&.last-box{
+		margin-right: 0;
+	}
+	
+}
+
+.image-box{
+	height: auto;
+	width: 100%;
+	padding-bottom: 100%;
+	overflow: hidden;
+	background: #f7f6f6;
+	margin-bottom: 10px;
+	position: relative;
+
+	.progress{
+		width: 75%;
+		height: 20px;
+		position: absolute;
+		top:0;bottom:0;right:0;left:0;
+		margin: auto;
+		z-index: 2;
+		background: #fff;
+
+		.bar{
+			background: green;
+			height: 20px;
+		}
+
+	}
+	
+	&.loading{
+  	background: #f7f6f6;
+  	opacity: 0.5;
+  }
+
+	img{
+		position: absolute;
+		top:0;bottom:0;right:0;left:0;
+		margin: auto;
+	}
+
+}
